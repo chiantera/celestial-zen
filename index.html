@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Zen Garden | 3D Interactive Meditation</title>
+    <meta name="description"
+        content="A premium 3D interactive meditation experience. Relax in the celestial zen garden with reactive particles and ambient sounds.">
+    <meta name="keywords" content="meditation, 3D, zen, relaxation, interactive, webgl, threejs">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="zen-canvas"></canvas>
+
+    <main class="ui-overlay">
+        <header>
+            <h1>Celestial Zen</h1>
+            <p class="subtitle">Breathe in. Move your light.</p>
+        </header>
+
+        <section class="controls">
+            <div class="control-group">
+                <label for="speed-slider">Flow Speed</label>
+                <input type="range" id="speed-slider" min="0.1" max="2" step="0.1" value="1">
+            </div>
+            <div class="control-group">
+                <label for="color-picker">Aura Hue</label>
+                <input type="range" id="hue-slider" min="0" max="360" step="1" value="220">
+            </div>
+        </section>
+
+        <footer>
+            <button id="beat-toggle" class="glass-btn">Enable Harmony Beat</button>
+            <button id="reset-btn" class="glass-btn">Re-center Harmony</button>
+        </footer>
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
